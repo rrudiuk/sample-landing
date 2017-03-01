@@ -5,14 +5,14 @@
 @import '_vars.styl'
 
 // Подключаем спрайты (просто раскоментируем импорт при появлении PNG спрайтов)
-// @import '_sprite.styl'
+@import '_sprite.styl'
 
 // Подключаем миксины
 @import '_mixins.styl'
 
 html 
   line-height 1
-  font-size 14px
+  font-size 16px
 
 body
   font-family mainFont
@@ -46,7 +46,6 @@ textarea
 
 section
   position relative
-  margin-bottom 20px
 
 input,
 select,
@@ -84,6 +83,10 @@ button
 .wrapper
   width 100%
   margin 0 auto
+  
+.center
+  margin 0 auto
+  display block
 
 
 
@@ -104,3 +107,60 @@ button
 
 // Стили медиазапросов
 @import '_media.styl'
+
+.about-wrap
+  width 100%
+  max-width 1170px
+
+.broccoli
+  sprite($s-broccoli)
+  margin-top 100px
+  margin-bottom 25px
+
+.about-title
+  font-style SourceSansProBold, sans-serif
+  font-size 1.69rem
+  text-align center
+  margin-bottom 80px
+  
+.about-content
+  width 100%
+  max-width 970px
+  text-align center
+  margin-bottom 120px
+  line-height 2
+  
+.about-wrap_grey
+  background-color greyColorBg
+  //overflow hidden
+  
+.feature
+  margin 80px 57px 120px 60px
+  display inline-block
+
+.feature-clock
+  display block
+  sprite($s-clock)
+  margin-bottom 35px
+  
+.feature-vector
+  display block
+  sprite($s-vector)
+  margin-bottom 35px
+  
+.feature-tructor
+  display block
+  sprite($s-trucktor)
+  margin-bottom 35px
+  
+.feature-header
+  display block
+  font-size 1.13rem
+  font-style SourceSansProBold, sans-serif
+  font-weight bold
+  margin-bottom 40px
+  
+.feature-content
+  width 100%
+  max-width 270px
+  line-height 1.5
