@@ -88,12 +88,15 @@ button
   margin 0 auto
   display block
 
-//Margins snd paddings  
-.mb80
-  margin-bottom 80px
-  
+//Margins snd paddings    
 .mb50
   margin-bottom 50px
+  
+.mb70
+  margin-bottom 70px
+
+.mb80
+  margin-bottom 80px
   
 .mb110
   margin-bottom 110px
@@ -101,8 +104,23 @@ button
 .mb120
   margin-bottom 120px
   
+.mt110
+  margin-top 110px
+  
+.pt70
+  padding-top 70px
+
 .pt115
   padding-top 115px
+  
+.pb115
+  padding-bottom 115px
+  
+.pb120
+  padding-bottom 120px
+
+.pb140
+  padding-bottom 140px
 
 
 
@@ -125,19 +143,29 @@ button
 // Стили медиазапросов
 @import '_media.styl'
 
-.about-wrap
+.section-wrap
   width 100%
   max-width 1170px
+  margin 0 auto
 
 .broccoli
   sprite($s-broccoli)
   margin-top 100px
   margin-bottom 25px
 
-.about-title
+.section-title
   font-style SourceSansProBold, sans-serif
   font-size 1.69rem
   text-align center
+  
+.section-article
+  display block
+  width 100%
+  max-width 770px
+  text-align center
+  margin-bottom 110px
+  line-height 2
+  margin 0 auto
   
 .about-content
   width 100%
@@ -145,9 +173,18 @@ button
   text-align center
   line-height 2
   
-.about-wrap_grey
+.section-wrap_grey
   background-color greyColorBg
-  //overflow hidden
+  
+.section-divider
+      position absolute
+      top 310px
+      left 50%
+      margin-left -37.5px
+      display block
+      width 75px
+      height 7px
+      sprite($s-block-divider_orange)
   
 .feature
   margin 80px 57px 120px 60px
@@ -180,14 +217,8 @@ button
   max-width 270px
   line-height 1.5
   
-.featured-articles
-  width 100%
-  max-width 770px
-  text-align center
-  margin-bottom 110px
-  line-height 2
-  
-.about-wrap
+.section-wrap,
+.portfolio-slider
   .bx-wrapper
     .bx-viewport
       border none
@@ -197,14 +228,21 @@ button
 
 .featured
   position relative
-  display inline-block
   height 370px
-  //width 100%
-  //max-width 360px
   padding 70px 0 0 40px
-  //margin-right 30px
   background-color featuredBg
   color featuredColor
+  cursor pointer
+  &:hover  
+    .featured_active
+      position absolute
+      top 0
+      left 50%
+      margin-left -37.5px
+      display block
+      width 75px
+      height 7px
+      sprite($s-block-divider_orange)
 
 .featured-title
   display block
@@ -227,9 +265,57 @@ button
   line-height 1.5
   bottom 50px
   img
+    
     float left
     margin-right 15px
   .featured-author_name
     display block
     padding-top 10px
     
+.featured-slider,
+.clients-slider
+  position relative
+  
+.featured-slider_prev,
+.featured-slider_next,
+.clients-slider_prev,
+.clients-slider_next
+  position absolute
+  top 50%
+  a
+    display block
+    width 16px
+    height 16px
+    &.disabled
+      display none
+  
+.featured-slider_prev,
+.clients-slider_prev
+  left -4%
+  .bx-prev
+    background url('../img/svg/left-arrow.svg') 0 0 no-repeat
+    background-size 100%
+
+    
+.featured-slider_next,
+.clients-slider_next
+  right -4%
+  .bx-next
+    background url('../img/svg/right-arrow.svg') 0 0 no-repeat
+    background-size 100%
+    
+.clients-slider
+  width 100%
+  max-width 900px
+  margin 0 auto
+  
+.portfolio-menu
+  ul
+    text-align center
+    
+  
+.porfolio-menu_item
+  display inline-block
+  margin-right 30px
+  &:last-child
+    margin-right 0

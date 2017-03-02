@@ -4,12 +4,12 @@ block title
 	| Главная страница
 
 block content
-	section.about-wrap.center
+	section.section-wrap
 		span.broccoli.center
-		h3.about-title.mb80 Who & Why
+		h3.section-title.mb80 Who & Why
 		p.about-content.center.mb120 The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the evening. But Gregor found it easy to give up having the door open, he had, after all, often failed to make use of it when it was open and, without the family having noticed it, lain in his room in its darkest corner. One time, though, the charwoman left the door.
-	section.about-wrap_grey
-		section.about-wrap.center.about-wrap_grey
+	section.section-wrap_grey
+		section.section-wrap
 				.feature
 					span.feature-clock
 					span.feature-header An Wow Feature
@@ -22,35 +22,103 @@ block content
 					span.feature-tructor
 					span.feature-header An Amazing Feature
 					p.feature-content The gentlemen who rented the room would sometimes take their evening meal at home in the living.
-	section.about-wrap.center.pt115
-		h3.about-title.mb50 Featured articles
-		p.featured-articles.center.mb110 The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the
-		ul.bxslider
-			li.featured
-				span.featured-title comic
-				p.featured-content A million ways to die in the wild wild wild west
-				.featured-author
-					img(src="static/img/content/author1.png")
-					span.featured-author_name jimmy jefferson
-					span.featured-author_date 21/08/2013
-			li.featured
-				span.featured-title lifestyle
-				p.featured-content The most comfortable chair comes with no backpain
-				.featured-author
-					img(src="static/img/content/author2.png")
-					span.featured-author_name Gail Gutierrez
-					span.featured-author_date 21/08/2013
-			li.featured
-				span.featured-title travel
-				p.featured-content Journey to the center of the earth with jefferson
-				.featured-author
-					img(src="static/img/content/author3.png")
-					span.featured-author_name mason johnston
-					span.featured-author_date 21/08/2013
-			li.featured
-				span.featured-title comic
-				p.featured-content A million ways to die in the wild wild wild west
-				.featured-author
-					img(src="static/img/content/author1.png")
-					span.featured-author_name jimmy jefferson
-					span.featured-author_date 21/08/2013
+	section.section-wrap.pt115.pb140
+		h3.section-title.mb50 Featured articles
+		p.section-article.mb110 The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the
+		section.featured-slider.mt110
+			.featured-slider_prev
+			.featured-slider_next
+			ul.bxslider
+				li.featured
+					.featured_active
+					span.featured-title comic
+					p.featured-content A million ways to die in the wild wild wild west
+					.featured-author
+						img(src="static/img/content/author1.png")
+						span.featured-author_name jimmy jefferson
+						span.featured-author_date 21/08/2013
+				li.featured
+					.featured_active
+					span.featured-title lifestyle
+					p.featured-content The most comfortable chair comes with no backpain
+					.featured-author
+						img(src="static/img/content/author2.png")
+						span.featured-author_name Gail Gutierrez
+						span.featured-author_date 21/08/2013
+				li.featured
+					.featured_active
+					span.featured-title travel
+					p.featured-content Journey to the center of the earth with jefferson
+					.featured-author
+						img(src="static/img/content/author3.png")
+						span.featured-author_name mason johnston
+						span.featured-author_date 21/08/2013
+				li.featured
+					.featured_active
+					span.featured-title comic
+					p.featured-content A million ways to die in the wild wild wild west
+					.featured-author
+						img(src="static/img/content/author1.png")
+						span.featured-author_name jimmy jefferson
+						span.featured-author_date 21/08/2013
+	section.section-wrap_grey.pb115
+		section.section-wrap.pt70
+			h3.section-title.mb70 Clients
+			.clients-slider
+				.clients-slider_prev
+				.clients-slider_next
+				ul.clients-bxslider
+					li
+						img(src="static/img/content/client1.png")
+					li
+						img(src="static/img/content/client2.png")
+					li
+						img(src="static/img/content/client3.png")
+					li
+						img(src="static/img/content/client4.png")
+					li
+						img(src="static/img/content/client5.png")
+					li
+						img(src="static/img/content/client6.png")
+					li
+						img(src="static/img/content/client1.png")
+					li
+						img(src="static/img/content/client2.png")
+					li
+						img(src="static/img/content/client3.png")
+					li
+						img(src="static/img/content/client4.png")
+					li
+						img(src="static/img/content/client5.png")
+					li
+						img(src="static/img/content/client6.png")
+	section.section-wrap.pt115.pb120
+		h3.section-title.mb50 Portfolio & Screenshots
+		p.section-article The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the
+		.section-divider
+	section.portfolio
+		nav.portfolio-menu.mb50
+			ul
+				li.porfolio-menu_item
+					a(href = "javascript:void(0);") Art
+				li.porfolio-menu_item
+					a(href = "javascript:void(0);") Mystery
+				li.porfolio-menu_item
+					a(href = "javascript:void(0);") Illusion
+				li.porfolio-menu_item
+					a(href = "javascript:void(0);") Travel
+				li.porfolio-menu_item
+					a(href = "javascript:void(0);") Paintings
+		.portfolio-slider
+			ul.porfolio-bxslider
+				li
+					img(src="static/img/content/portfolio1.jpg")
+
+				li
+					img(src="static/img/content/portfolio2.jpg")
+
+				li
+					img(src="static/img/content/portfolio3.jpg")
+
+				li
+					img(src="static/img/content/portfolio4.jpg")
