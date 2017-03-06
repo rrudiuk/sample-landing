@@ -96,29 +96,74 @@ block content
 		h3.section-title.mb50 Portfolio & Screenshots
 		p.section-article The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the
 		.section-divider
-	section.portfolio
+	section.portfolio.pb30
 		nav.portfolio-menu.mb50
 			ul
-				li.porfolio-menu_item
-					a(href = "javascript:void(0);") Art
-				li.porfolio-menu_item
-					a(href = "javascript:void(0);") Mystery
-				li.porfolio-menu_item
-					a(href = "javascript:void(0);") Illusion
-				li.porfolio-menu_item
-					a(href = "javascript:void(0);") Travel
-				li.porfolio-menu_item
-					a(href = "javascript:void(0);") Paintings
-		.portfolio-slider
+				li.portfolio-menu_item
+					a(data-filter="art")(href = "javascript:void(0);") Art
+				li.portfolio-menu_item
+					a(data-filter="mystery")(href = "javascript:void(0);") Mystery
+				li.portfolio-menu_item
+					a(data-filter="illusion")(href = "javascript:void(0);") Illusion
+				li.portfolio-menu_item
+					a(data-filter="travel")(href = "javascript:void(0);") Travel
+				li.portfolio-menu_item
+					a(data-filter="paintings")(href = "javascript:void(0);") Paintings
+		.portfolio-slider.porfolio-mixitup
 			ul.porfolio-bxslider
-				li
-					img(src="static/img/content/portfolio1.jpg")
+					li.mix.art
+						img(src="static/img/content/portfolio1.jpg")
 
-				li
-					img(src="static/img/content/portfolio2.jpg")
+					li.mix.mystery.art
+						img(src="static/img/content/portfolio2.jpg")
 
-				li
-					img(src="static/img/content/portfolio3.jpg")
+					li.mix.illusion
+						img(src="static/img/content/portfolio3.jpg")
 
+					li.mix.paintings.art
+						img(src="static/img/content/portfolio4.jpg")
+					li.mix.art
+						img(src="static/img/content/portfolio1.jpg")
+
+					li.mix.mystery.art
+						img(src="static/img/content/portfolio2.jpg")
+
+					li.mix.illusion
+						img(src="static/img/content/portfolio3.jpg")
+
+					li.mix.travel.art
+						img(src="static/img/content/portfolio4.jpg")
+	section.section-wrap_black
+		.quotes.pt80.pb70
+			span.quotes-icon
+			p Happiness cannot be traveled to, owned, earned, or worn. It is the spiritual experience of living every minute with love, grace & gratitude.
+			span.quotes-author Denis Waitley
+	section.section-wrap.pt115.pb140
+		h3.section-title.mb60 Team Members
+		p.section-article.pb100 The gentlemen who rented the room would sometimes take their evening meal at home in the living room that was used by everyone, and so the door to this room was often kept closed in the
+		.staff-wrap
+			ul.staff-member
 				li
-					img(src="static/img/content/portfolio4.jpg")
+					span.staff-photo.staff-photo1
+					span.staff-name James Philly
+					span.staff-position Lead Developer
+				li
+					span.staff-photo.staff-photo2
+					span.staff-name Cactus Jack
+					span.staff-position 3D Model Designer
+				li
+					span.staff-photo.staff-photo3
+					span.staff-name Jack Sparrow
+					span.staff-position Master of All Trade
+				li
+					span.staff-photo.staff-photo4
+					span.staff-name Yaga Squarehead
+					span.staff-position Manages Money
+	section.projects-wrap
+		span.projects-title Facts & Numbers
+		.projects-details
+			ul.projects-details-list
+				li
+					span.projects-number 110
+					span.projects-divider
+					span.projects-description successful projects

@@ -92,6 +92,9 @@ button
 .mb50
   margin-bottom 50px
   
+.mb60
+  margin-bottom 60px
+  
 .mb70
   margin-bottom 70px
 
@@ -106,13 +109,25 @@ button
   
 .mt110
   margin-top 110px
-  
+
 .pt70
   padding-top 70px
+  
+.pt80
+  padding-top 80px
 
 .pt115
   padding-top 115px
   
+.pb30
+  padding-bottom 30px
+  
+.pb70
+  padding-bottom 70px
+  
+.pb100
+  padding-bottom 100px
+
 .pb115
   padding-bottom 115px
   
@@ -314,8 +329,136 @@ button
     text-align center
     
   
-.porfolio-menu_item
+.portfolio-menu_item
   display inline-block
   margin-right 30px
   &:last-child
     margin-right 0
+  
+.portfolio-menu_item
+  a
+    &:hover
+      text-decoration underline
+    &:click
+      color red
+      .porfolio-bxslider
+        left 0
+        
+.section-wrap_black
+  background blackColor
+
+.quotes
+  margin 0 auto
+  width 100%
+  max-width 830px
+  text-align center
+  font-size 1.25rem
+  color featuredColor
+
+.quotes-icon
+    display block
+    margin 0 auto 30px
+    width 16px
+    height 16px
+    background-image url('../img/content/quotes.png')
+
+.quotes
+  p
+    margin-bottom 50px
+    line-height 2
+
+.quotes-author
+  font-style italic
+  font-family lightFont
+
+.staff-wrap
+  width 100%
+  max-width 1030px
+  margin 0 auto
+
+.staff-member
+  text-align center
+  li
+    display inline-block
+    width 140px
+    height 205px
+    text-align center
+    margin-right 14%
+    &:last-child
+      margin-right 0
+  
+.staff-photo
+  display block
+  width 100px
+  height 110px
+  margin 0 auto 70px
+
+.staff-photo1
+  sprite($s-james)
+  
+.staff-photo2
+  sprite($s-cactus)
+
+.staff-photo3
+  sprite($s-jack)
+
+.staff-photo4
+  sprite($s-yaga)
+
+.staff-name
+  display block
+  text-transform uppercase
+  font-family boldFont
+  margin-bottom 20px
+  
+.staff-position
+  font-size .94
+  
+.projects-wrap
+  width 100%
+  height 690px
+  padding-top 110px
+  background url('../img/general/projects.jpg') 0 0 no-repeat
+  background-size cover
+  color featuredColor
+  text-align center
+  
+.projects-title
+  font-size 1.69rem
+
+.projects-details
+  width 100%
+  max-width 830px
+  background rgba(255, 255, 255, .4)
+  margin 0 auto
+
+.projects-details-list
+  padding-top 63px
+  text-align center
+  li
+    padding-bottom 63px
+    width 230px
+    margin 0 10%
+
+.projects-number,
+.projects-divider,
+.projects-description
+  display block
+
+.projects-number
+  margin-bottom 20px
+  font-size 1.69rem
+  font-family boldFont
+  
+.projects-divider
+  margin-bottom 25px
+  background url('../img/content/projects-divider.png') 0 0 no-repeat
+  width 75px
+  height 4px
+  margin 0 auto 20px
+  
+.projects-description
+  font-size 1.5rem
+  
+  
+      
