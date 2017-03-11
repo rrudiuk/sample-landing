@@ -30,6 +30,20 @@ $(document).ready(function(){
   	prevSelector: '.clients-slider_prev'
   });
 
+  $('.latest-blog_slider').bxSlider({
+    minSlides: 1,
+    maxSlides: 3,
+    hideControlOnEnd: true,
+    infiniteLoop: false,
+    pager: false,
+    slideWidth: 270,
+    slideMargin: 160,
+    nextText: '',
+    prevText: '',
+    nextSelector: '.latest-blog_next',
+    prevSelector: '.latest-blog_prev'
+  });
+
   $('.porfolio-bxslider').bxSlider({
     minSlides: 1,
     maxSlides: 4,

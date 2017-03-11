@@ -89,6 +89,9 @@ button
   display block
 
 //Margins snd paddings    
+.mb45
+  margin-bottom 45px
+
 .mb50
   margin-bottom 50px
   
@@ -288,13 +291,16 @@ button
     padding-top 10px
     
 .featured-slider,
-.clients-slider
+.clients-slider,
+.latest-blog_slider
   position relative
   
 .featured-slider_prev,
 .featured-slider_next,
 .clients-slider_prev,
-.clients-slider_next
+.clients-slider_next,
+.latest-blog_prev,
+.latest-blog_next
   position absolute
   top 50%
   a
@@ -305,7 +311,8 @@ button
       display none
   
 .featured-slider_prev,
-.clients-slider_prev
+.clients-slider_prev,
+.latest-blog_prev
   left -4%
   .bx-prev
     background url('../img/svg/left-arrow.svg') 0 0 no-repeat
@@ -313,7 +320,8 @@ button
 
     
 .featured-slider_next,
-.clients-slider_next
+.clients-slider_next,
+.latest-blog_next
   right -4%
   .bx-next
     background url('../img/svg/right-arrow.svg') 0 0 no-repeat
@@ -424,7 +432,9 @@ button
   text-align center
   
 .projects-title
+  display block
   font-size 1.69rem
+  margin-bottom 70px
 
 .projects-details
   width 100%
@@ -435,10 +445,14 @@ button
 .projects-details-list
   padding-top 63px
   text-align center
+  height 355px
+  overflow hidden
   li
-    padding-bottom 63px
-    width 230px
-    margin 0 10%
+    display inline-block
+    padding 0 10% 63px 10%
+    //width 50%
+    max-width 400px
+    margin 0 auto
 
 .projects-number,
 .projects-divider,
@@ -459,6 +473,59 @@ button
   
 .projects-description
   font-size 1.5rem
+  
+.blog
+  overflow hidden
+  width 97%
+  img
+    width 48%
+  .right
+    float right
+    
+.blog_date,
+.blog_title,
+.blog_description
+  display block
+  text-align center
+
+.blog-post
+  width 48%
+  padding 85px 5% 0 5%
+  .blog_date
+    font-size .875rem
+    margin-bottom 22px
+  .blog_title
+    font-size 1.5rem
+    font-family boldFont
+    margin-bottom 60px
+.blog_description
+  line-height 2
+
+.latest-blog_slider
+  text-align center
+
+.latest-blog_title,
+.latest-blog_date
+  display block
+  margin-left 20px
+
+.latest-blog_item
+  display inline-block
+  border-left solid 7px blackColor
+  .latest-blog_title
+    margin-top 18px
+    font-size 1.13rem
+    font-family boldFont
+  .latest-blog_date
+    font-size .875rem
+    margin-top 20px
+    margin-bottom 18px
+
+  
+    
+    
+    
+
   
   
       
