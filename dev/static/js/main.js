@@ -2,6 +2,11 @@
 // Начинать писать отсюда!!!!
 
 $(document).ready(function(){
+  
+  $('.header-nav_toggle').click(function() {
+    $('.main-nav').toggleClass('active');
+  });
+
   $('.bxslider').bxSlider({
   	minSlides: 1,
   	maxSlides: 3,

@@ -16,11 +16,15 @@
         <header class="header-main">
           <nav class="header-top"><span class="main-logo">unicorn</span>
             <ul class="main-nav">
-              <li><a href="javascript:void(0);">home</a></li>
-              <li><a href="javascript:void(0);">about</a></li>
-              <li><a href="javascript:void(0);">stories</a></li>
-              <li><a href="javascript:void(0);">hello</a></li>
-              <li><a href="javascript:void(0);"></a></li>
+              <li class="main-nav_item"><a href="javascript:void(0);">home</a></li>
+              <li class="main-nav_item"><a href="javascript:void(0);">about</a></li>
+              <li class="main-nav_item"><a href="javascript:void(0);">stories</a></li>
+              <li class="main-nav_item"><a href="javascript:void(0);">hello</a></li>
+              <li class="header-nav_toggle">
+                <div class="nav-toggle_line nav-toggle_line--top"></div>
+                <div class="nav-toggle_line nav-toggle_line--middle"></div>
+                <div class="nav-toggle_line nav-toggle_line--bottom"></div>
+              </li>
             </ul>
           </nav>
           <section class="header-content"><span class="header-title">storyteller</span><span class="header-title_underline"></span>
@@ -194,6 +198,19 @@
       <div class="footer">
         <div class="footer-main"><span class="footer-main_title">Unicorn</span>
           <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his</p>
+          <form class="footer-form">
+            <div class="footer-form_line">
+              <input class="footer-form_input" type="text" name="email" placeholder="EMAIL">
+              <input class="footer-form_input" type="text" name="subject" placeholder="SUBJECT">
+            </div>
+            <div class="footer-form_line">
+              <textarea class="footer-form_text" placeholder="MESSAGE" name="message"></textarea>
+            </div>
+            <div class="footer-form_divider"></div>
+            <div class="footer-form_btn">
+              <input type="submit" value="SEND">
+            </div>
+          </form>
         </div>
         <div class="footer-main">
           <ul>

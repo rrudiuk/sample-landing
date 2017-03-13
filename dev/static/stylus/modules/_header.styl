@@ -5,7 +5,7 @@
 	background-size cover
 	
 .header-main
-	width 100%
+	width 97%
 	max-width 1170px
 	margin 0 auto
 .header-top
@@ -14,18 +14,31 @@
 	font-size 1.13rem
 	font-weight bold
 	font-family SourceSansProBold, sans serif
+	overflow hidden
 .main-nav
 	float right
-	overflow hidden
+	&.active
+		.nav-toggle_line--top
+			top 10px
+			transition .5s
+			transform rotate(45deg)
+		.nav-toggle_line--middle
+			top 9px
+			opacity 0
+			transition .5s
+		.nav-toggle_line--bottom
+			top 10px
+			transition .5s
+			transform rotate(-45deg)
+		.main-nav_item
+			display inline-block
 	li
-		display inline-block
 		margin-right 20px
 		a
 			color blackColor
-		&:last-child
-			margin-right 0
-			cursor pointer
-			sprite($s-header-nav)
+.main-nav_item
+			display none
+
 .header-content
 	display block
 	position relative
@@ -62,3 +75,29 @@
 		font-weight bold
 		padding-top 13px
 		color blackColor
+
+.header-nav_toggle
+	display inline-block
+	position relative
+	width 15px
+	height 15px
+	cursor pointer
+
+.nav-toggle_line
+	position absolute
+	width 100%
+	height 2px
+	display block
+	background-color blackColor
+		
+
+.nav-toggle_line--top
+	top 4px
+	transition 1s
+.nav-toggle_line--middle
+	top 9px
+	opacity 1
+	transition 1s
+.nav-toggle_line--bottom
+	top 14px
+	transition 1s
