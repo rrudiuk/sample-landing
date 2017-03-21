@@ -3087,6 +3087,7 @@ button {
 .header-content p {
   position: relative;
   top: 50px;
+  max-width: 570px;
   line-height: 2;
   margin-bottom: 115px;
 }
@@ -3267,21 +3268,203 @@ footer {
 .footer-bottom-nav_item:first-child {
   margin-left: 0;
 }
+@media screen and (max-width: 1220px) {
+  .section-wrap .feature-list .feature {
+    margin: 80px 25px 0;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .section-wrap .feature-list .feature {
+    width: 100%;
+    max-width: 200px;
+    margin: 80px 25px 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .wrapper .section-wrap {
+    width: 90%;
+  }
+  .wrapper .section-wrap .feature-list {
+    padding-bottom: 60px;
+  }
+  .wrapper .section-wrap .feature-list .feature {
+    width: 100%;
+    max-width: 150px;
+    margin: 40px 25px 0;
+  }
+  .wrapper .section-wrap .feature-list .feature .feature-header {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .wrapper .section-wrap .feature-list .feature .feature-content {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header-wrapper {
+    height: 850px;
+  }
+  .header-main {
+    width: 90%;
+  }
+  .header-content {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 250px;
+  }
+  .header-content .header-title {
+    font-size: 3.5rem;
+  }
+  .header-content .header-title_underline {
+    left: 50%;
+    margin-left: -69px;
+  }
+  .header-content a {
+    left: 50%;
+    margin-left: -135px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-wrapper {
+    height: 600px;
+  }
+  .header-content {
+    margin-top: 100px;
+    font-size: 0.875rem;
+  }
+  .header-content .header-title {
+    font-size: 2.5rem;
+  }
+  .main-nav li {
+    font-size: 0.875rem;
+  }
+  .projects-wrap .projects-details .projects-details-list li {
+    width: 40%;
+    padding: 0 0 35px;
+  }
+  .mb50 {
+    margin-bottom: 20px;
+  }
+  .mb60 {
+    margin-bottom: 25px;
+  }
+  .mb80 {
+    margin-bottom: 40px;
+  }
+  .mb110 {
+    margin-bottom: 40px;
+  }
+  .mb120 {
+    margin-bottom: 40px;
+  }
+  .mt110 {
+    margin-top: 40px;
+  }
+  .pt80 {
+    padding-top: 30px;
+  }
+  .pt115 {
+    padding-top: 50px;
+  }
+  .pb70 {
+    padding-bottom: 30px;
+  }
+  .pb100 {
+    padding-bottom: 35px;
+  }
+  .pb120 {
+    padding-bottom: 40px;
+  }
+  .pb140 {
+    padding-bottom: 60px;
+  }
+  .section-wrap .broccoli {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  .section-wrap .section-title {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  .section-wrap .about-content,
+  .section-wrap .section-article {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  .section-wrap .staff-wrap .staff-member li {
+    margin-top: 35px;
+  }
+  .section-wrap .staff-wrap .staff-member li .staff-photo {
+    margin-bottom: 25px;
+  }
+  .section-wrap .staff-wrap .staff-member li .staff-name {
+    font-size: 0.94rem;
+  }
+  .section-wrap .staff-wrap .staff-member li .staff-position {
+    font-size: 0.875rem;
+  }
+  .portfolio .portfolio-menu .portfolio-menu_item {
+    font-size: 0.875rem;
+  }
+  .section-wrap_black .quotes .quotes-icon {
+    margin-bottom: 20px;
+  }
+  .section-wrap_black .quotes p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  .section-wrap_black .quotes .quotes-author {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .header-wrapper {
+    height: 430px;
+  }
+  .header-content {
+    margin-top: 70px;
+    font-size: 0.875rem;
+  }
+  .header-content p {
+    line-height: 1;
+    margin-bottom: 50px;
+    top: 25px;
+  }
+  .header-content .header-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .header-content a {
+    width: 150px;
+    height: 40px;
+    padding-top: 10px;
+    margin-left: -75px;
+  }
+  .main-nav {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+  .projects-wrap .projects-details .projects-details-list {
+    padding-top: 30px;
+  }
+}
 .section-wrap {
   width: 97%;
   max-width: 1170px;
   margin: 0 auto;
 }
 .broccoli {
+  display: block;
   background-image: url("../img/sprite/sprite.png");
   background-position: -263px -53px;
   width: 39px;
   height: 39px;
-  margin-top: 100px;
-  margin-bottom: 25px;
+  margin: 100px auto 25px;
 }
 .section-title {
-  font-style: SourceSansProBold, sans-serif;
+  font-style: SourceSansProBold;
   font-size: 1.69rem;
   text-align: center;
 }
@@ -3316,8 +3499,12 @@ footer {
   width: 75px;
   height: 7px;
 }
+.feature-list {
+  text-align: center;
+  padding-bottom: 120px;
+}
 .feature {
-  margin: 80px 57px 120px 60px;
+  margin: 80px 57px 0 60px;
   display: inline-block;
 }
 .feature-clock {
@@ -3347,7 +3534,8 @@ footer {
 .feature-header {
   display: block;
   font-size: 1.13rem;
-  font-style: SourceSansProBold, sans-serif;
+  font-style: SourceSansProBold;
+  text-align: left;
   font-weight: bold;
   margin-bottom: 40px;
 }
@@ -3355,6 +3543,7 @@ footer {
   width: 100%;
   max-width: 270px;
   line-height: 1.5;
+  text-align: left;
 }
 .section-wrap .bx-wrapper .bx-viewport,
 .portfolio-slider .bx-wrapper .bx-viewport {
@@ -3530,10 +3719,7 @@ footer {
   width: 140px;
   height: 205px;
   text-align: center;
-  margin-right: 14%;
-}
-.staff-member li:last-child {
-  margin-right: 0;
+  margin: 100px 5% 0;
 }
 .staff-photo {
   display: block;
@@ -3572,7 +3758,7 @@ footer {
   margin-bottom: 20px;
 }
 .staff-position {
-  font-size: 0.94;
+  font-size: 0.94rem;
 }
 .projects-wrap {
   width: 100%;
@@ -3595,16 +3781,16 @@ footer {
   margin: 0 auto;
 }
 .projects-details-list {
-  padding-top: 63px;
+  padding: 63px 0 75px;
   text-align: center;
   height: 355px;
   overflow: hidden;
 }
 .projects-details-list li {
   display: inline-block;
-  padding: 0 10% 63px 10%;
+  padding: 0 10% 63px;
   max-width: 400px;
-  margin: 0 auto;
+  vertical-align: top;
 }
 .projects-number,
 .projects-divider,
@@ -3613,7 +3799,7 @@ footer {
 }
 .projects-number {
   margin-bottom: 20px;
-  font-size: 1.69rem;
+  font-size: 1.5rem;
   font-family: SourceSansProBold;
 }
 .projects-divider {
@@ -3624,7 +3810,8 @@ footer {
   margin: 0 auto 20px;
 }
 .projects-description {
-  font-size: 1.5rem;
+  font-size: 1.38rem;
+  text-align: center;
 }
 .blog {
   overflow: hidden;
