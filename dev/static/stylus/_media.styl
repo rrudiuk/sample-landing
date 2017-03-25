@@ -3,6 +3,14 @@
 		.feature-list
 			.feature
 				margin 80px 25px 0
+		.blog
+			.blog-post
+				padding-top 50px
+	.footer-main_menu
+		padding-right 0
+		.footer-nav
+			padding-right 5%
+			margin-right 8%
 				
 @media screen and (max-width 1020px)
 	.section-wrap
@@ -11,7 +19,24 @@
 				width 100%
 				max-width 200px
 				margin 80px 25px 0
+		.blog
+			.blog-post
+				padding-top 15px
+			.blog_title
+				margin-bottom 30px
 				
+@media screen and (max-width 880px)
+	.section-wrap
+		.blog
+			.blog_date
+				margin-bottom 15px
+			.blog_title
+				margin-bottom 15px
+				font-size 1.25rem
+			.blog_description
+				font-size .875rem
+				line-height 2
+
 @media screen and (max-width 800px)
 	.wrapper
 		.section-wrap
@@ -27,6 +52,30 @@
 						margin-bottom 20px
 					.feature-content
 						font-size .875rem
+			.blog
+				.blog_date
+					margin-bottom 10px
+				.blog_title
+					margin-bottom 10px
+					font-size 1rem
+				.blog_description
+					line-height 1.5				
+	.projects-wrap
+		.projects-details
+			.projects-details-list
+				text-align center
+				padding 70px 0 65px
+				li
+					width 40%
+					max-width 320px
+					padding 0 0 35px
+	.footer-bottom
+		padding-top 20px
+		.footer-bottom-nav,
+		.footer-bottom_content
+			float none
+		.footer-bottom-nav
+			margin-bottom 15px
 		
 @media screen and (max-width 750px)
 	.header-wrapper
@@ -45,7 +94,31 @@
 		a
 			left 50%
 			margin-left -135px
+	.footer-main
+		display block
+		width 97%
+		margin 0 auto 20px
+		p
+			margin-bottom 20px
+		.footer-form_text
+			margin-bottom 10px
+	.footer-nav_title
+		margin-bottom 20px
 			
+			
+@media screen and (max-width 720px)
+	.section-wrap
+		.blog
+			margin 0 auto
+			img
+				display block
+				width 100%
+			.right
+				float none
+			.blog-post
+				width 100%
+				margin 0 auto 30px
+
 @media screen and (max-width 600px)
 	.header-wrapper
 		height 600px
@@ -57,12 +130,6 @@
 	.main-nav
 		li
 			font-size .875rem
-	.projects-wrap
-		.projects-details
-			.projects-details-list
-				li
-					width 40%
-					padding 0 0 35px
 	
 	/*Content*/
 	
@@ -111,6 +178,16 @@
 						font-size .94rem
 					.staff-position
 						font-size .875rem
+		.quotes-tw
+			.quotes-tw_icon
+				margin-bottom 20px
+			img
+				margin-bottom 20px
+			p
+				margin-bottom 20px
+				line-height 1.5
+				font-size 1rem
+				
 	.portfolio
 		.portfolio-menu
 			.portfolio-menu_item
@@ -151,4 +228,18 @@
 	.projects-wrap
 		.projects-details
 			.projects-details-list
-				padding-top 30px
+				padding-top 45px
+
+@media screen and (max-width 390px)
+	.footer-main
+		ul
+			text-align center
+			.footer-nav
+				padding-right 5%
+				margin-right 0
+				text-align left
+				ul
+					.footer-nav_item
+						text-align left
+	.footer-bottom-nav_item
+		margin-left 10px

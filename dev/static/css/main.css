@@ -3148,7 +3148,7 @@ footer {
 }
 .footer-main {
   width: 49%;
-  min-width: 550px;
+  max-width: 550px;
   padding-right: 9%;
 }
 .footer-main p,
@@ -3159,6 +3159,9 @@ footer {
 }
 .footer-main p {
   margin-bottom: 45px;
+}
+.footer-main_menu {
+  padding-right: 5%;
 }
 .footer-nav {
   padding-right: 7%;
@@ -3272,12 +3275,41 @@ footer {
   .section-wrap .feature-list .feature {
     margin: 80px 25px 0;
   }
+  .section-wrap .blog .blog-post {
+    padding-top: 50px;
+  }
+  .footer-main_menu {
+    padding-right: 0;
+  }
+  .footer-main_menu .footer-nav {
+    padding-right: 5%;
+    margin-right: 8%;
+  }
 }
 @media screen and (max-width: 1020px) {
   .section-wrap .feature-list .feature {
     width: 100%;
     max-width: 200px;
     margin: 80px 25px 0;
+  }
+  .section-wrap .blog .blog-post {
+    padding-top: 15px;
+  }
+  .section-wrap .blog .blog_title {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 880px) {
+  .section-wrap .blog .blog_date {
+    margin-bottom: 15px;
+  }
+  .section-wrap .blog .blog_title {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+  }
+  .section-wrap .blog .blog_description {
+    font-size: 0.875rem;
+    line-height: 2;
   }
 }
 @media screen and (max-width: 800px) {
@@ -3298,6 +3330,35 @@ footer {
   }
   .wrapper .section-wrap .feature-list .feature .feature-content {
     font-size: 0.875rem;
+  }
+  .wrapper .section-wrap .blog .blog_date {
+    margin-bottom: 10px;
+  }
+  .wrapper .section-wrap .blog .blog_title {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  .wrapper .section-wrap .blog .blog_description {
+    line-height: 1.5;
+  }
+  .projects-wrap .projects-details .projects-details-list {
+    text-align: center;
+    padding: 70px 0 65px;
+  }
+  .projects-wrap .projects-details .projects-details-list li {
+    width: 40%;
+    max-width: 320px;
+    padding: 0 0 35px;
+  }
+  .footer-bottom {
+    padding-top: 20px;
+  }
+  .footer-bottom .footer-bottom-nav,
+  .footer-bottom .footer-bottom_content {
+    float: none;
+  }
+  .footer-bottom .footer-bottom-nav {
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 750px) {
@@ -3323,6 +3384,36 @@ footer {
     left: 50%;
     margin-left: -135px;
   }
+  .footer-main {
+    display: block;
+    width: 97%;
+    margin: 0 auto 20px;
+  }
+  .footer-main p {
+    margin-bottom: 20px;
+  }
+  .footer-main .footer-form_text {
+    margin-bottom: 10px;
+  }
+  .footer-nav_title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .section-wrap .blog {
+    margin: 0 auto;
+  }
+  .section-wrap .blog img {
+    display: block;
+    width: 100%;
+  }
+  .section-wrap .blog .right {
+    float: none;
+  }
+  .section-wrap .blog .blog-post {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
 }
 @media screen and (max-width: 600px) {
   .header-wrapper {
@@ -3337,10 +3428,6 @@ footer {
   }
   .main-nav li {
     font-size: 0.875rem;
-  }
-  .projects-wrap .projects-details .projects-details-list li {
-    width: 40%;
-    padding: 0 0 35px;
   }
   .mb50 {
     margin-bottom: 20px;
@@ -3403,6 +3490,17 @@ footer {
   .section-wrap .staff-wrap .staff-member li .staff-position {
     font-size: 0.875rem;
   }
+  .section-wrap .quotes-tw .quotes-tw_icon {
+    margin-bottom: 20px;
+  }
+  .section-wrap .quotes-tw img {
+    margin-bottom: 20px;
+  }
+  .section-wrap .quotes-tw p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-size: 1rem;
+  }
   .portfolio .portfolio-menu .portfolio-menu_item {
     font-size: 0.875rem;
   }
@@ -3447,7 +3545,23 @@ footer {
     right: 0;
   }
   .projects-wrap .projects-details .projects-details-list {
-    padding-top: 30px;
+    padding-top: 45px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .footer-main ul {
+    text-align: center;
+  }
+  .footer-main ul .footer-nav {
+    padding-right: 5%;
+    margin-right: 0;
+    text-align: left;
+  }
+  .footer-main ul .footer-nav ul .footer-nav_item {
+    text-align: left;
+  }
+  .footer-bottom-nav_item {
+    margin-left: 10px;
   }
 }
 .section-wrap {
@@ -3781,15 +3895,15 @@ footer {
   margin: 0 auto;
 }
 .projects-details-list {
-  padding: 63px 0 75px;
+  padding: 63px 70px 75px;
   text-align: center;
   height: 355px;
   overflow: hidden;
 }
 .projects-details-list li {
   display: inline-block;
-  padding: 0 10% 63px;
-  max-width: 400px;
+  padding: 0 9% 63px;
+  width: 320px;
   vertical-align: top;
 }
 .projects-number,
